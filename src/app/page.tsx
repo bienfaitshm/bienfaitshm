@@ -6,7 +6,7 @@ export default function Home() {
       <main className="">
         <Image
           className=""
-          src="/next.svg"
+          src="/avatar.jpg"
           alt="Next.js logo"
           width={180}
           height={38}
