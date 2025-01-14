@@ -4,8 +4,11 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between max-w-screen-xl mx-auto p-5">
       <div>
-        <Link href="/" className="flex items-center bg-muted p-3 rounded-full">
-          <HomeIcon className="mr-2 font-bold" />
+        <Link
+          href="/"
+          className="flex items-center bg-muted py-3 px-5 rounded-full font-bold"
+        >
+          <HomeIcon className="mr-2 h-5 w-5" />
           <span>Bienfaitshm</span>
         </Link>
       </div>
