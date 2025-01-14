@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Bienfait shomari",
   description: "Devellopeur web, mobile et desktop",
+  openGraph: {
+    title: "Bienfait shomari",
+    description: "Buiding digital products, brands, and experience.",
+    images: "/avatar.jpg",
+  },
 };
 
 export default function RootLayout({
