@@ -1,6 +1,14 @@
 // import { HomeIcon } from "@radix-ui/react-icons";
 import { House } from "lucide-react";
 import { Link } from "next-view-transitions";
+// import {} from "separator"
+
+/**
+ * contacts
+ * experiences
+ * competances
+ * @returns
+ */
 
 const Navbar = () => {
   return (
@@ -14,7 +22,11 @@ const Navbar = () => {
           <span>Bienfaitshm</span>
         </Link>
       </div>
-      <div></div>
+      <div className="flex items-center gap-2 bg-muted py-2 px-5 rounded-full font-medium">
+        <Link href="#contact">Contacts</Link>
+        <Link href="#contact">Competances</Link>
+        <Link href="#contact">Experiances</Link>
+      </div>
     </nav>
   );
 };
