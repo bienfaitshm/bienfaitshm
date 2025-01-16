@@ -1,6 +1,6 @@
 // import { HomeIcon } from "@radix-ui/react-icons";
 import { House } from "lucide-react";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 const Navbar = () => {
   return (
@@ -8,7 +8,7 @@ const Navbar = () => {
       <div>
         <Link
           href="/"
-          className="flex items-center bg-muted py-3 px-5 rounded-full font-bold"
+          className="flex items-center bg-muted py-2 px-5 rounded-full font-medium scale-100 hover:scale-105 transition-all"
         >
           <House className="mr-2 h-5 w-5" />
           <span>Bienfaitshm</span>
