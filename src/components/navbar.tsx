@@ -1,6 +1,7 @@
 // import { HomeIcon } from "@radix-ui/react-icons";
 import { House } from "lucide-react";
 import { Link } from "next-view-transitions";
+import ButtonTheme from "./button-theme";
 // import {} from "separator"
 
 /**
@@ -30,6 +31,7 @@ const Navbar = () => {
           </Link>
           <Link href="#contact">Experiances</Link>
         </div>
+        <ButtonTheme />
       </div>
     </nav>
   );
