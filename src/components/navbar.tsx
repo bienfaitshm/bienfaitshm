@@ -1,6 +1,7 @@
 // import { HomeIcon } from "@radix-ui/react-icons";
 import { House } from "lucide-react";
 import Link from "next/link";
+
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-between max-w-screen-xl mx-auto p-5">
