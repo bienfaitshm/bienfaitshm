@@ -22,9 +22,11 @@ const Navbar = () => {
           <span>Bienfaitshm</span>
         </Link>
       </div>
-      <div className="flex items-center gap-2 bg-muted py-2 px-5 rounded-full font-medium">
+      <div className="flex items-center gap-2 bg-muted py-2 px-5 rounded-full font-medium cursor-pointer">
         <Link href="#contact">Contacts</Link>
-        <Link href="#contact">Competances</Link>
+        <Link href="#contact" className="border-l-2 border-r-2 px-2">
+          Competances
+        </Link>
         <Link href="#contact">Experiances</Link>
       </div>
     </nav>
