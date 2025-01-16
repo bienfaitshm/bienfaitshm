@@ -1,4 +1,5 @@
-import { HomeIcon } from "@radix-ui/react-icons";
+// import { HomeIcon } from "@radix-ui/react-icons";
+import { House } from "lucide-react";
 import Link from "next/link";
 const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ const Navbar = () => {
           href="/"
           className="flex items-center bg-muted py-3 px-5 rounded-full font-bold"
         >
-          <HomeIcon className="mr-2 h-5 w-5" />
+          <House className="mr-2 h-5 w-5" />
           <span>Bienfaitshm</span>
         </Link>
       </div>
