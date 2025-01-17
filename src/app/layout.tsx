@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar";
 import { ViewTransitions } from "next-view-transitions";
 import { ThemeProvider } from "@/components/providers/theme";
 import "./globals.css";
+import "./style.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,13 +16,23 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const title = "Bienfait shomari";
+const description = "Buiding digital products, brands, and experience.";
+const images = "/avatar.jpg";
+
 export const metadata: Metadata = {
-  title: "Bienfait shomari",
-  description: "Devellopeur web, mobile et desktop",
+  metadataBase: new URL("https://bienfaitshm.vercel.app"),
+  title,
+  description,
   openGraph: {
-    title: "Bienfait shomari",
-    description: "Buiding digital products, brands, and experience.",
-    images: "/avatar.jpg",
+    title,
+    description,
+    images,
+  },
+  twitter: {
+    title,
+    description,
+    images,
   },
 };
 
@@ -36,7 +47,12 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <ThemeProvider defaultTheme="dark">
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
             <Navbar />
             {children}
           </ThemeProvider>

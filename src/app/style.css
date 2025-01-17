@@ -1,21 +1,18 @@
-body {
-  --dot-bg: #161616;
-  --dot-color: #848282;
-  --dot-size: 1px;
-  --dot-space: 50px;
+/* body {
+  --dot-space: 30px;
   background: linear-gradient(
         90deg,
-        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        var(--background) calc(var(--dot-space) - var(--primary)),
         transparent 1%
       )
       center / var(--dot-space) var(--dot-space),
     linear-gradient(
-        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        var(--background) calc(var(--dot-space) - var(--primary)),
         transparent 1%
       )
       center / var(--dot-space) var(--dot-space),
-    var(--dot-color);
-}
+    var(--primary);
+} */
 .demo {
   view-transition-name: demo-title;
   width: fit-content;
