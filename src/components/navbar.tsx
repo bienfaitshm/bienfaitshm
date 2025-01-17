@@ -1,7 +1,8 @@
 // import { HomeIcon } from "@radix-ui/react-icons";
-import { House } from "lucide-react";
+import { House, Contact } from "lucide-react";
 import { Link } from "next-view-transitions";
 import ButtonTheme from "./button-theme";
+import { NavbarMobile, type TMenu } from "./ui/navbar-mobile";
 // import {} from "separator"
 
 /**
@@ -10,6 +11,10 @@ import ButtonTheme from "./button-theme";
  * competances
  * @returns
  */
+
+const menus: TMenu[] = [
+  { title: "Contacts", href: "/#contact", icon: <Contact /> },
+];
 
 const Navbar = () => {
   return (
@@ -32,6 +37,7 @@ const Navbar = () => {
           <Link href="/skills">Experiances</Link>
         </div>
         <ButtonTheme />
+        <NavbarMobile menus={menus} />
       </div>
     </nav>
   );
