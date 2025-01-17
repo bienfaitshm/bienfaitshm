@@ -7,6 +7,7 @@ import { BgDot } from "@/components/bg";
 import { MESSAGES } from "@/lib/texts";
 import "./globals.css";
 import "./style.css";
+import { Footer } from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -59,6 +60,7 @@ export default function RootLayout({
               <div className="min-h-[100vh] px-3">
                 <Navbar />
                 {children}
+                <Footer />
               </div>
             </BgDot>
           </ThemeProvider>
