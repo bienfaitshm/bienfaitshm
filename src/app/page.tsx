@@ -77,7 +77,7 @@ export default function Home() {
             }))}
           />
         </section>
-        <section className="mt-20">
+        <section id="about" className="mt-20">
           <div className="flex flex-col lg:flex-row  justify-between gap-10">
             <div className="space-y-4">
               <div>
@@ -97,6 +97,18 @@ export default function Home() {
               width={300}
               height={140}
             />
+          </div>
+        </section>
+        <section id="skills">
+          <div>
+            <TypographyH1>Skills</TypographyH1>
+            <TypographyP>
+              Specialized in cross-platform application development. Expertise
+              in Python (Django), React, Next.js and React Native, as well as
+              REST API design and PostgreSQL databases. I have worked on various
+              projects, ranging from complex web applications to native mobile
+              applications. And here is my stack
+            </TypographyP>
           </div>
         </section>
       </main>
