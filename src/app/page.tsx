@@ -1,7 +1,11 @@
 import {
   TypographyH1,
+  TypographyH2,
+  TypographyH3,
   TypographyH4,
+  TypographyMuted,
   TypographyP,
+  TypographySmall,
 } from "@/components/ui/typography";
 import {
   LinkedInLogoIcon,
@@ -16,6 +20,7 @@ import { MESSAGES } from "@/lib/texts";
 import { GITHUB, LINKEDIN, X, EMAIL, PHONE_NUMBER } from "@/constants/links";
 import type { TConctact } from "@/components/hover-effect";
 import { FloatingDock } from "@/components/ui/floating-dock";
+import Image from "next/image";
 // import { GreatName } from "@/components/great-name-text";
 
 // import { HeroHighlightDemo } from "@/components/bg";
@@ -51,7 +56,7 @@ const contacts: TConctact[] = [
 export default function Home() {
   return (
     <div className="md:mt-20 my-5">
-      <main className="mx-auto max-w-screen-md space-y-14">
+      <main className="mx-auto max-w-screen-md space-y-20">
         <section className="space-y-10">
           <div className="flex flex-col items-center gap-3">
             <Avatar className="h-40 w-40">
@@ -75,9 +80,24 @@ export default function Home() {
             }))}
           />
         </section>
-        <section>
-          <div>
-            <TypographyP>{MESSAGES.aboutme}</TypographyP>
+        <section className="mt-20">
+          <div className="flex flex-row justify-between gap-10">
+            <div className="space-y-4">
+              <div>
+                <TypographyH2>I am a web and mobile developer,</TypographyH2>
+                <TypographyMuted>
+                  with a strong sensitivity to user experience.
+                </TypographyMuted>
+              </div>
+              <TypographyP>{MESSAGES.aboutme}</TypographyP>
+            </div>
+            <Image
+              className="rounded-xl"
+              alt="developer"
+              src="/about2.png"
+              width={300}
+              height={150}
+            />
           </div>
         </section>
       </main>
