@@ -3,9 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { ViewTransitions } from "next-view-transitions";
 import { ThemeProvider } from "@/components/providers/theme";
+import { BgDot } from "@/components/bg";
+import { MESSAGES } from "@/lib/texts";
 import "./globals.css";
 import "./style.css";
-import { BgDot } from "@/components/bg";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +18,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "Bienfait shomari";
-const description = "Buiding digital products, brands, and experience.";
+const title = MESSAGES.great_name;
+const description = MESSAGES.message_strategry;
 const images = "/avatar.jpg";
 
 export const metadata: Metadata = {
