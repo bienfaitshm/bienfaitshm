@@ -1,18 +1,13 @@
-/* body {
-  --dot-space: 30px;
-  background: linear-gradient(
-        90deg,
-        var(--background) calc(var(--dot-space) - var(--primary)),
-        transparent 1%
-      )
-      center / var(--dot-space) var(--dot-space),
-    linear-gradient(
-        var(--background) calc(var(--dot-space) - var(--primary)),
-        transparent 1%
-      )
-      center / var(--dot-space) var(--dot-space),
-    var(--primary);
-} */
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .demo {
   view-transition-name: demo-title;
   width: fit-content;
