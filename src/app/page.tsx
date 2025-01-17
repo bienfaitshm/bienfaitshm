@@ -58,7 +58,7 @@ export default function Home() {
             </Avatar>
             <TypographyH4>{MESSAGES.great_name}</TypographyH4>
           </div>
-          <TypographyH1 className="text-center bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-neutral-900/70 to-neutral-900 dark:from-white dark:to-white/60">
+          <TypographyH1 className="main-title text-center bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-neutral-900/70 to-neutral-900 dark:from-white dark:to-white/60">
             {MESSAGES.message_strategry}
           </TypographyH1>
         </section>
