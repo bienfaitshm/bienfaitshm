@@ -14,7 +14,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { MESSAGES } from "@/lib/texts";
 // import { ContactExternalLink } from "@/components/contact-external-link";
 import { GITHUB, LINKEDIN, X, EMAIL, PHONE_NUMBER } from "@/constants/links";
-import { HoverEffect, type TConctact } from "@/components/hover-effect";
+import type { TConctact } from "@/components/hover-effect";
+import { FloatingDock } from "@/components/ui/floating-dock";
 // import { GreatName } from "@/components/great-name-text";
 
 // import { HeroHighlightDemo } from "@/components/bg";
@@ -67,7 +68,12 @@ export default function Home() {
           id="contacts"
           className="flex items-center justify-center gap-7"
         >
-          <HoverEffect contacts={contacts} />
+          <FloatingDock
+            items={contacts.map((contact) => ({
+              ...contact,
+              title: contact.name,
+            }))}
+          />
         </section>
         <section>
           <div>

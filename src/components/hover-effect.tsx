@@ -21,7 +21,7 @@ export const HoverEffect: React.FC<
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className={cn("flex items-center gap-4", className)}>
+    <div className={cn("flex items-center", className)}>
       {contacts.map((contact, idx) => (
         <Link
           href={contact.href}
