@@ -46,7 +46,7 @@ const contacts: TConctact[] = [
   {
     name: "X",
     icon: <TwitterLogoIcon className="h-7 w-7" />,
-    href: `tel:${X}`,
+    href: X,
   },
 ];
 
