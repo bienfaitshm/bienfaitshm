@@ -6,7 +6,7 @@ import {
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import { TypographyH4, TypographyP } from "./typography";
+import { TypographyP } from "./typography";
 
 interface TimelineEntry {
   title: string;
