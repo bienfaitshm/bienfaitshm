@@ -2,6 +2,10 @@
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 
+export const BgDot: React.FC<React.PropsWithChildren> = ({ children }) => {
+  return <HeroHighlight>{children}</HeroHighlight>;
+};
+
 export function HeroHighlightDemo() {
   return (
     <HeroHighlight>
