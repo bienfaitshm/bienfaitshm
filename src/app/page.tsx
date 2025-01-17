@@ -1,6 +1,5 @@
 import {
   TypographyH1,
-  TypographyH2,
   TypographyH4,
   TypographyMuted,
   TypographyP,
@@ -82,7 +81,7 @@ export default function Home() {
           <div className="flex flex-row justify-between gap-10">
             <div className="space-y-4">
               <div>
-                <TypographyH2>I am a web and mobile developer,</TypographyH2>
+                <TypographyH1>I am a web and mobile developer,</TypographyH1>
                 <TypographyMuted>
                   with a strong sensitivity to user experience.
                 </TypographyMuted>
