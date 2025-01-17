@@ -109,7 +109,7 @@ export function addVariablesForColors({
   addBase,
   theme,
 }: {
-  addBase: (base: Record<string, string>) => void;
+  addBase: (base: any) => void;
   theme: (path: string) => Record<string, string>;
 }) {
   const allColors = flattenColorPalette(theme("colors"));
