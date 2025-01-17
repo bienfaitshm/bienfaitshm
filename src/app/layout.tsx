@@ -5,6 +5,7 @@ import { ViewTransitions } from "next-view-transitions";
 import { ThemeProvider } from "@/components/providers/theme";
 import "./globals.css";
 import "./style.css";
+import { BgDot } from "@/components/bg";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,8 +54,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Navbar />
-            {children}
+            <BgDot>
+              <Navbar />
+              {children}
+            </BgDot>
           </ThemeProvider>
         </body>
       </html>
