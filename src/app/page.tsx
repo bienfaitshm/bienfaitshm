@@ -95,7 +95,7 @@ export default function Home() {
               alt="developer"
               src="/about2.png"
               width={300}
-              height={150}
+              height={140}
             />
           </div>
         </section>
