@@ -13,14 +13,10 @@ import {
 import { Smartphone } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { MESSAGES } from "@/lib/texts";
-// import { ContactExternalLink } from "@/components/contact-external-link";
 import { GITHUB, LINKEDIN, X, EMAIL, PHONE_NUMBER } from "@/constants/links";
 import type { TConctact } from "@/components/hover-effect";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import Image from "next/image";
-// import { GreatName } from "@/components/great-name-text";
-
-// import { HeroHighlightDemo } from "@/components/bg";
 
 const contacts: TConctact[] = [
   {
@@ -66,10 +62,7 @@ export default function Home() {
             {MESSAGES.message_strategry}
           </TypographyH1>
         </section>
-        <section
-          id="contacts"
-          className="flex items-center justify-center gap-7"
-        >
+        <section className="flex items-center justify-center gap-7">
           <FloatingDock
             items={contacts.map((contact) => ({
               ...contact,
@@ -102,6 +95,18 @@ export default function Home() {
         <section id="skills">
           <div>
             <TypographyH1>Skills</TypographyH1>
+            <TypographyP>
+              Specialized in cross-platform application development. Expertise
+              in Python (Django), React, Next.js and React Native, as well as
+              REST API design and PostgreSQL databases. I have worked on various
+              projects, ranging from complex web applications to native mobile
+              applications. And here is my stack
+            </TypographyP>
+          </div>
+        </section>
+        <section id="contacts">
+          <div>
+            <TypographyH1>Contacts</TypographyH1>
             <TypographyP>
               Specialized in cross-platform application development. Expertise
               in Python (Django), React, Next.js and React Native, as well as

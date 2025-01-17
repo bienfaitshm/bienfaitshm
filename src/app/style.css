@@ -12,3 +12,8 @@
   view-transition-name: demo-title;
   width: fit-content;
 }
+
+.main-title {
+  view-transition-name: main-title;
+  width: fit-content;
+}
