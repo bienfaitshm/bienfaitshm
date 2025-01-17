@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Tabs } from "@/components/animated-tab";
+import { TypographyH1 } from "@/components/ui/typography";
 
 export default function TabsDemo() {
   const tabs = [
@@ -58,8 +59,11 @@ export default function TabsDemo() {
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
-      <Tabs tabs={tabs} />
+    <div className="space-y-4 mx-auto max-w-screen-lg my-10">
+      <TypographyH1 className="main-title text-center bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-neutral-900/70 to-neutral-900 dark:from-white dark:to-white/60">
+        Experiances
+      </TypographyH1>
+      {/* <Tabs tabs={tabs} /> */}
     </div>
   );
 }
