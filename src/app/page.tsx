@@ -49,7 +49,7 @@ const contacts: TConctact[] = [
 export default function Home() {
   return (
     <div className="md:mt-20 my-5">
-      <main className="mx-auto max-w-screen-md space-y-20">
+      <main className="mx-auto max-w-screen-lg space-y-20">
         <section className="space-y-10">
           <div className="flex flex-col items-center gap-3">
             <Avatar className="h-40 w-40">
@@ -73,8 +73,10 @@ export default function Home() {
         <section id="about" className="mt-20">
           <div className="flex flex-col lg:flex-row  justify-between gap-10">
             <div className="space-y-4">
-              <div>
-                <TypographyH1>I am a web and mobile developer,</TypographyH1>
+              <div className="space-y-3">
+                <TypographyH1 className="font-bold text-neutral-700 dark:text-neutral-300 ">
+                  I am a web and mobile developer,
+                </TypographyH1>
                 <TypographyMuted className="text-md">
                   with a strong sensitivity to user experience.
                 </TypographyMuted>
