@@ -2,7 +2,7 @@
 import { House, Contact } from "lucide-react";
 import { Link } from "next-view-transitions";
 import ButtonTheme from "./button-theme";
-import { NavbarMobile, type TMenu } from "./ui/navbar-mobile";
+import { NavbarMobile, type TMenu } from "./navbar-mobile";
 // import {} from "separator"
 
 /**
