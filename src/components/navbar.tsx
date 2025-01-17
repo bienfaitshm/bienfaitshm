@@ -29,7 +29,7 @@ const Navbar = () => {
           <Link href="#contact" className="border-l-2 border-r-2 px-2">
             Competances
           </Link>
-          <Link href="#contact">Experiances</Link>
+          <Link href="/skills">Experiances</Link>
         </div>
         <ButtonTheme />
       </div>

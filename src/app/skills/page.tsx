@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Tabs } from "@/components/animated-tab";
 
-export function TabsDemo() {
+export default function TabsDemo() {
   const tabs = [
     {
       title: "Product",
