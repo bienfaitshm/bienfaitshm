@@ -78,7 +78,7 @@ export default function Home() {
           />
         </section>
         <section className="mt-20">
-          <div className="flex flex-row justify-between gap-10">
+          <div className="flex flex-col lg:flex-row  justify-between gap-10">
             <div className="space-y-4">
               <div>
                 <TypographyH1>I am a web and mobile developer,</TypographyH1>
@@ -86,10 +86,12 @@ export default function Home() {
                   with a strong sensitivity to user experience.
                 </TypographyMuted>
               </div>
-              <TypographyP>{MESSAGES.aboutme}</TypographyP>
+              <TypographyP className="text-justify">
+                {MESSAGES.aboutme}
+              </TypographyP>
             </div>
             <Image
-              className="rounded-xl"
+              className="rounded-xl w-full"
               alt="developer"
               src="/about2.png"
               width={300}
