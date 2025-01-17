@@ -82,7 +82,7 @@ export default function Home() {
             <div className="space-y-4">
               <div>
                 <TypographyH1>I am a web and mobile developer,</TypographyH1>
-                <TypographyMuted>
+                <TypographyMuted className="text-md">
                   with a strong sensitivity to user experience.
                 </TypographyMuted>
               </div>
