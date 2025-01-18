@@ -1,8 +1,14 @@
 // import { HomeIcon } from "@radix-ui/react-icons";
-import { House, Contact } from "lucide-react";
+import {
+  House,
+  Contact,
+  ChartNoAxesCombined,
+  Grid2x2CheckIcon,
+} from "lucide-react";
 import { Link } from "next-view-transitions";
 import ButtonTheme from "./button-theme";
 import { NavbarMobile, type TMenu } from "./navbar-mobile";
+import { cn } from "@/lib/utils";
 // import {} from "separator"
 
 /**
@@ -14,6 +20,8 @@ import { NavbarMobile, type TMenu } from "./navbar-mobile";
 
 const menus: TMenu[] = [
   { title: "Contacts", href: "/#contact", icon: <Contact /> },
+  { title: "Experiences", href: "/skills", icon: <Grid2x2CheckIcon /> },
+  { title: "Competances", href: "/#contact", icon: <ChartNoAxesCombined /> },
 ];
 
 const Navbar = () => {
@@ -30,11 +38,15 @@ const Navbar = () => {
       </div>
       <div className="flex items-center gap-2">
         <div className="hidden md:flex items-center gap-2 bg-muted py-2 px-5 rounded-full font-medium cursor-pointer">
-          <Link href="#contact">Contacts</Link>
-          <Link href="#contact" className="border-l-2 border-r-2 px-2">
-            Competances
-          </Link>
-          <Link href="/skills">Experiances</Link>
+          {menus.map((menu, index) => (
+            <Link
+              key={menu.href}
+              href={menu.href}
+              className={cn("px-2", index !== 0 && "border-l-2")}
+            >
+              {menu.title}
+            </Link>
+          ))}
         </div>
         <ButtonTheme />
         <NavbarMobile menus={menus} />
