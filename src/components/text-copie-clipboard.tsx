@@ -38,7 +38,7 @@ export const CopieClipboardText: React.FC<CopieClipboardTextProps> = ({
               </Button>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Copie</p>
+              <p>Copy</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
