@@ -18,8 +18,8 @@ import { cn } from "@/lib/utils";
 
 const menus: TMenu[] = [
   { title: "Contacts", href: "/#contact", icon: <Contact /> },
-  { title: "Experiences", href: "/skills", icon: <Grid2x2CheckIcon /> },
-  { title: "Competances", href: "/#contact", icon: <ChartNoAxesCombined /> },
+  { title: "Experiences", href: "/experiences", icon: <Grid2x2CheckIcon /> },
+  { title: "Competances", href: "/#skills", icon: <ChartNoAxesCombined /> },
 ];
 
 const Navbar = () => {
