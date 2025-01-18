@@ -116,7 +116,7 @@ export default function Home() {
           </div>
         </section>
         <section id="contacts" className="space-y-5">
-          <div>
+          <div className="space-y-3">
             <TypographyH3 className="text-4xl font-bold text-neutral-700 dark:text-neutral-300 ">
               Contacts
             </TypographyH3>
