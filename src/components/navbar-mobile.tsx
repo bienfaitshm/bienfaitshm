@@ -40,7 +40,7 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({
             <SheetTitle>Menus</SheetTitle>
             <SheetDescription></SheetDescription>
           </SheetHeader>
-          <div>
+          <div className="space-y-2 text-neutral-800 dark:text-neutral-300">
             {menus.map((menu) => (
               <Link
                 key={menu.href}
@@ -48,7 +48,7 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({
                 className="flex items-center gap-2"
               >
                 {menu.icon}
-                <span>{menu.title}</span>
+                <span className="ml-1">{menu.title}</span>
               </Link>
             ))}
           </div>
