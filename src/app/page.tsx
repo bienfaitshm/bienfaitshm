@@ -126,7 +126,7 @@ export default function Home() {
             </TypographyP>
           </div>
 
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-3 gap-5">
             {contacts.map((contact, index) => (
               <div
                 key={index}
