@@ -18,6 +18,7 @@ import { GITHUB, LINKEDIN, X, EMAIL, PHONE_NUMBER } from "@/constants/links";
 import type { TConctact } from "@/components/hover-effect";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import Image from "next/image";
+import { CopieClipboardText } from "@/components/text-copie-clipboard";
 
 const contacts: (TConctact & { value?: string })[] = [
   {
@@ -133,11 +134,7 @@ export default function Home() {
               >
                 <TypographyH4>{contact.name}</TypographyH4>
                 <div>
-                  <div>
-                    <TypographyP className="text-neutral-300">
-                      {contact?.value}
-                    </TypographyP>
-                  </div>
+                  <CopieClipboardText text={contact?.value || ""} />
                 </div>
                 <div className="absolute -top-5 right-2 p-3 rounded-full bg-purple-900">
                   {contact.icon}
