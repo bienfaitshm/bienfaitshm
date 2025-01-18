@@ -1,4 +1,3 @@
-// import { HomeIcon } from "@radix-ui/react-icons";
 import {
   House,
   Contact,
@@ -9,7 +8,6 @@ import { Link } from "next-view-transitions";
 import ButtonTheme from "./button-theme";
 import { NavbarMobile, type TMenu } from "./navbar-mobile";
 import { cn } from "@/lib/utils";
-// import {} from "separator"
 
 /**
  * contacts
