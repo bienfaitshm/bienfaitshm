@@ -1,5 +1,6 @@
 import {
   TypographyH1,
+  TypographyH3,
   TypographyH4,
   TypographyMuted,
   TypographyP,
@@ -18,37 +19,42 @@ import type { TConctact } from "@/components/hover-effect";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import Image from "next/image";
 
-const contacts: TConctact[] = [
+const contacts: (TConctact & { value?: string })[] = [
   {
     name: "Email",
     icon: <EnvelopeClosedIcon className="h-7 w-7" />,
     href: `mailto:${EMAIL}`,
+    value: EMAIL,
   },
   {
     name: "WhatsApp",
     icon: <Smartphone className="h-7 w-7" />,
     href: `tel:${PHONE_NUMBER}`,
+    value: PHONE_NUMBER,
   },
   {
     name: "LinkedIn",
     icon: <LinkedInLogoIcon className="h-7 w-7" />,
     href: LINKEDIN,
+    value: LINKEDIN,
   },
   {
     name: "Github",
     icon: <GitHubLogoIcon className="h-7 w-7" />,
     href: GITHUB,
+    value: GITHUB,
   },
   {
     name: "X",
     icon: <TwitterLogoIcon className="h-7 w-7" />,
     href: X,
+    value: X,
   },
 ];
 
 export default function Home() {
   return (
-    <div className="md:mt-20 my-5">
+    <div className="md:mt-20 mt-5 mb-20">
       <main className="mx-auto max-w-screen-lg space-y-20">
         <section className="space-y-10">
           <div className="flex flex-col items-center gap-3">
@@ -108,16 +114,36 @@ export default function Home() {
             </TypographyP>
           </div>
         </section>
-        <section id="contacts">
+        <section id="contacts" className="space-y-5">
           <div>
-            <TypographyH1>Contacts</TypographyH1>
+            <TypographyH3 className="text-4xl font-bold text-neutral-700 dark:text-neutral-300 ">
+              Contacts
+            </TypographyH3>
             <TypographyP>
-              Specialized in cross-platform application development. Expertise
-              in Python (Django), React, Next.js and React Native, as well as
-              REST API design and PostgreSQL databases. I have worked on various
-              projects, ranging from complex web applications to native mobile
-              applications. And here is my stack
+              If you need more information, please do not hesitate to contact
+              me. I will respond to you as quickly as possible.
             </TypographyP>
+          </div>
+
+          <div className="grid grid-cols-3 gap-5">
+            {contacts.map((contact, index) => (
+              <div
+                key={index}
+                className="bg-purple-600 rounded-md p-5 text-neutral-200 relative overflow-hidden cursor-pointer hover:scale-105 transition-transform"
+              >
+                <TypographyH4>{contact.name}</TypographyH4>
+                <div>
+                  <div>
+                    <TypographyP className="text-neutral-300">
+                      {contact?.value}
+                    </TypographyP>
+                  </div>
+                </div>
+                <div className="absolute -top-5 right-2 p-3 rounded-full bg-purple-900">
+                  {contact.icon}
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </main>
