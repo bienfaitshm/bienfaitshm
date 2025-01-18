@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function copierTexte(texte: string) {
+export function copyText(texte: string) {
   if (navigator.clipboard) {
     navigator.clipboard
       .writeText(texte)
