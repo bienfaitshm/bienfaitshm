@@ -4,7 +4,7 @@ import { TypographyH2 } from "./ui/typography";
 export const Footer = () => {
   return (
     <div>
-      <div className="mx-auto max-w-screen-md p-2">
+      <div className="mx-auto max-w-screen-lg p-2">
         <TypographyH2>Bienfait shomari</TypographyH2>
       </div>
       <Separator />
