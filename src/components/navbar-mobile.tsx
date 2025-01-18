@@ -1,6 +1,4 @@
 import { cn } from "@/lib/utils";
-// import { LayoutGrid } from "lucide-react";
-
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
