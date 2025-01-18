@@ -19,7 +19,7 @@ import { cn } from "@/lib/utils";
 const menus: TMenu[] = [
   {
     title: "Contacts",
-    href: "/#contact",
+    href: "/#contacts",
     icon: <Contact className="h-5 w-5" />,
   },
   {
