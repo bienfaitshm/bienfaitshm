@@ -4,7 +4,7 @@ import { TimelineContainer } from "@/components/time-liner-container";
 
 export default function TabsDemo() {
   return (
-    <div className="space-y-4 mx-auto max-w-screen-lg my-10 w-full bg-background dark:bg-neutral-950 font-sans md:px-10">
+    <div className="space-y-4 mx-auto max-w-screen-lg my-10 w-full backdrop-blur-md bg-background/30 dark:bg-neutral-950/50 font-sans md:px-10">
       <div className="pt-10 px-4 md:px-8 lg:px-10 space-y-3">
         <TypographyH1 className="main-title text-center bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-neutral-900/70 to-neutral-900 dark:from-white dark:to-white/60">
           Experiences
