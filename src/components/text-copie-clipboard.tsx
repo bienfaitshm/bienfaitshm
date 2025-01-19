@@ -9,7 +9,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-import { Copy } from "lucide-react";
+import { Copy, Check } from "lucide-react";
 import { copyText } from "@/lib/utils";
 
 interface CopieClipboardTextProps {
@@ -18,9 +18,8 @@ interface CopieClipboardTextProps {
 export const CopieClipboardText: React.FC<CopieClipboardTextProps> = ({
   text,
 }) => {
-  const handlerCopyValue = () => {
-    copyText(text);
-  };
+  const [isClicked, setClicked] = React.useState<boolean>(false);
+
   return (
     <div className="relative flex items-center gap-2">
       <TypographyP className="text-neutral-300">{text}</TypographyP>
@@ -32,9 +31,15 @@ export const CopieClipboardText: React.FC<CopieClipboardTextProps> = ({
                 className="rounded-full"
                 variant="ghost"
                 size="icon"
-                onClick={handlerCopyValue}
+                onClick={() => copyText(text)}
+                onMouseDown={() => setClicked(true)}
+                onMouseUp={() => setClicked(false)}
               >
-                <Copy className="h-4 w-4" />
+                {isClicked ? (
+                  <Check className="h-4 w-4" />
+                ) : (
+                  <Copy className="h-4 w-4" />
+                )}
               </Button>
             </TooltipTrigger>
             <TooltipContent>
