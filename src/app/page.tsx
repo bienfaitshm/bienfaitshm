@@ -11,7 +11,7 @@ import {
   EnvelopeClosedIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
-import { Smartphone } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { MESSAGES } from "@/lib/texts";
 import { GITHUB, LINKEDIN, X, EMAIL, PHONE_NUMBER } from "@/constants/links";
@@ -20,6 +20,7 @@ import { FloatingDock } from "@/components/ui/floating-dock";
 import Image from "next/image";
 import { CopieClipboardText } from "@/components/text-copie-clipboard";
 import { SkillsSection } from "@/components/sections/skills";
+import { Separator } from "@/components/ui/separator";
 
 const contacts: (TConctact & { value?: string })[] = [
   {
@@ -30,7 +31,7 @@ const contacts: (TConctact & { value?: string })[] = [
   },
   {
     name: "WhatsApp",
-    icon: <Smartphone className="h-7 w-7" />,
+    icon: <PhoneCall className="h-7 w-7" />,
     href: `tel:${PHONE_NUMBER}`,
     value: PHONE_NUMBER,
   },
@@ -117,6 +118,7 @@ export default function Home() {
           </div>
           <SkillsSection />
         </section>
+        <Separator />
         <section id="contacts" className="space-y-5">
           <div className="space-y-3">
             <TypographyH3 className="text-4xl font-bold text-neutral-700 dark:text-neutral-300 ">
@@ -132,14 +134,12 @@ export default function Home() {
             {contacts.map((contact, index) => (
               <div
                 key={index}
-                className="bg-purple-600 rounded-md p-5 text-neutral-200 relative overflow-hidden cursor-pointer hover:scale-105 transition-transform"
+                className="border rounded-md p-5 text-neutral-200 relative overflow-hidden cursor-pointer"
               >
                 <TypographyH4>{contact.name}</TypographyH4>
-                <div>
-                  <CopieClipboardText text={contact?.value || ""} />
-                </div>
-                <div className="absolute -top-5 right-2 p-3 rounded-full bg-purple-900">
+                <div className="flex items-center gap-2">
                   {contact.icon}
+                  <CopieClipboardText text={contact?.value || ""} />
                 </div>
               </div>
             ))}
