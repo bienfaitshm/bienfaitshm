@@ -19,6 +19,7 @@ import type { TConctact } from "@/components/hover-effect";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import Image from "next/image";
 import { CopieClipboardText } from "@/components/text-copie-clipboard";
+import { SkillsSection } from "@/components/sections/skills";
 
 const contacts: (TConctact & { value?: string })[] = [
   {
@@ -103,7 +104,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section id="skills">
+        <section id="skills" className="space-y-5">
           <div>
             <TypographyH1>Skills</TypographyH1>
             <TypographyP>
@@ -114,6 +115,7 @@ export default function Home() {
               applications. And here is my stack
             </TypographyP>
           </div>
+          <SkillsSection />
         </section>
         <section id="contacts" className="space-y-5">
           <div className="space-y-3">
