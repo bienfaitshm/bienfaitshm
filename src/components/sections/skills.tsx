@@ -3,18 +3,15 @@ import { User, ShoppingBag } from "lucide-react";
 
 const tabItems: {
   title: string;
-  value: string;
   icon: React.ReactNode;
   content?: React.ReactNode;
 }[] = [
   {
     title: "Expertise",
-    value: "expertise",
     icon: <ShoppingBag className="h-4 w-4 mr-2" />,
   },
   {
     title: "Languages",
-    value: "languages",
     icon: <User className="h-4 w-4 mr-2" />,
   },
 ];
@@ -25,8 +22,8 @@ export const SkillsSection = () => {
       <TabsList className="p-0 bg-transparent border-b border-b-neutral-400 rounded-none w-full justify-start">
         {tabItems.map((item) => (
           <TabsTrigger
-            key={item.value}
-            value={item.value}
+            key={item.title}
+            value={item.title}
             className="m-0 shadow-none bg-transparent rounded-none data-[state=active]:shadow-none data-[state=active]:bg-transparent data-[state=active]:border-b-2 data-[state=active]:border-neutral-700 dark:data-[state=active]:border-neutral-300"
           >
             {item.icon}
@@ -35,7 +32,7 @@ export const SkillsSection = () => {
         ))}
       </TabsList>
       {tabItems.map((itemContent) => (
-        <TabsContent key={itemContent.value} value={itemContent.value}>
+        <TabsContent key={itemContent.title} value={itemContent.title}>
           {itemContent.content}
         </TabsContent>
       ))}
