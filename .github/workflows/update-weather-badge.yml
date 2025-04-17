@@ -8,6 +8,10 @@ on:
 jobs:
   update_badge:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
 
     steps:
       - name: Checkout repository
@@ -30,3 +34,5 @@ jobs:
           git add weather_badge.svg
           git commit -m "Update weather badge"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
