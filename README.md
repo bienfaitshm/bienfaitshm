@@ -12,16 +12,16 @@ Developer exploring web development with **Next.js**, building on my C, C++, and
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-### Framwork and librerie
+### Frameworks and Libraries
 
 ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![React-Native](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react-native&logoColor=black)
+![React Native](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react-native&logoColor=black)
 
 ## 🌱 Other Experience
 
-- Mathmatical and physic
-- Freelence
+- Mathematics and Physics
+- Freelance
 
 <!-- ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black)
 ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) -->
