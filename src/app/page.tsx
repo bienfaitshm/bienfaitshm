@@ -1,8 +1,8 @@
 import {
   TypographyH1,
+  TypographyH2,
   TypographyH3,
   TypographyH4,
-  TypographyMuted,
   TypographyP,
 } from "@/components/ui/typography";
 import {
@@ -11,45 +11,48 @@ import {
   EnvelopeClosedIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
-import { PhoneCall } from "lucide-react";
+import { PhoneCall, Bot, BrainCircuit, Terminal, Layers } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { MESSAGES } from "@/lib/texts";
 import { GITHUB, LINKEDIN, X, EMAIL, PHONE_NUMBER } from "@/constants/links";
 import type { TConctact } from "@/components/hover-effect";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import Image from "next/image";
-import { CopieClipboardText } from "@/components/text-copie-clipboard";
 import { SkillsSection } from "@/components/sections/skills";
 import { Separator } from "@/components/ui/separator";
+import { ContactGrid } from "@/components/contact-sections";
 
-const contacts: (TConctact & { value?: string })[] = [
+// Typage strict pour les contacts
+const contacts: (TConctact & { value: string })[] = [
   {
     name: "Email",
-    icon: <EnvelopeClosedIcon className="h-7 w-7" />,
+    icon: <EnvelopeClosedIcon className="h-6 w-6" />,
     href: `mailto:${EMAIL}`,
     value: EMAIL,
   },
   {
     name: "WhatsApp",
-    icon: <PhoneCall className="h-7 w-7" />,
+    icon: <PhoneCall className="h-6 w-6" />,
     href: `tel:${PHONE_NUMBER}`,
     value: PHONE_NUMBER,
   },
   {
     name: "LinkedIn",
-    icon: <LinkedInLogoIcon className="h-7 w-7" />,
+    icon: <LinkedInLogoIcon className="h-6 w-6" />,
     href: LINKEDIN,
     value: LINKEDIN,
   },
   {
     name: "Github",
-    icon: <GitHubLogoIcon className="h-7 w-7" />,
+    icon: <GitHubLogoIcon className="h-6 w-6" />,
     href: GITHUB,
     value: GITHUB,
   },
   {
     name: "X",
-    icon: <TwitterLogoIcon className="h-7 w-7" />,
+    icon: <TwitterLogoIcon className="h-6 w-6" />,
     href: X,
     value: X,
   },
@@ -57,94 +60,153 @@ const contacts: (TConctact & { value?: string })[] = [
 
 export default function Home() {
   return (
-    <div className="md:mt-20 mt-5 mb-20">
-      <main className="mx-auto max-w-screen-lg space-y-20">
-        <section className="space-y-10">
-          <div className="flex flex-col items-center gap-3">
-            <Avatar className="h-40 w-40">
-              <AvatarImage src="/avatar.jpg" alt="bienfait shomari" />
-              <AvatarFallback>BF</AvatarFallback>
-            </Avatar>
-            <TypographyH4 className="text-neutral-700 dark:text-neutral-300 ">
-              {MESSAGES.great_name}
-            </TypographyH4>
-          </div>
-          <TypographyH1 className="main-title text-center bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-neutral-900/70 to-neutral-900 dark:from-white dark:to-white/60">
-            {MESSAGES.message_strategry}
-          </TypographyH1>
-        </section>
-        <section className="flex items-center justify-center gap-7">
-          <FloatingDock
-            items={contacts.map((contact) => ({
-              ...contact,
-              title: contact.name,
-            }))}
-          />
-        </section>
-        <section id="about" className="mt-20">
-          <div className="flex flex-col lg:flex-row  justify-between gap-10">
+    <div className="md:mt-20 mt-10 mb-20 px-4">
+      <main className="mx-auto max-w-4xl space-y-24">
+
+        {/* --- HERO SECTION --- */}
+        <section className="space-y-8 text-center">
+          <div className="flex flex-col items-center gap-4">
+            <div className="relative">
+              <Avatar className="h-40 w-40 border-4 border-neutral-100 dark:border-neutral-800 shadow-xl">
+                <AvatarImage src="/avatar.jpg" alt="Bienfait Shomari" />
+                <AvatarFallback>BS</AvatarFallback>
+              </Avatar>
+              <div className="absolute bottom-1 right-1 bg-green-500 w-6 h-6 rounded-full border-4 border-white dark:border-neutral-950" title="Open to work" />
+            </div>
+
             <div className="space-y-4">
-              <div className="space-y-3">
-                <TypographyH1 className="font-bold text-neutral-700 dark:text-neutral-300 ">
-                  I am a web and mobile developer,
-                </TypographyH1>
-                <TypographyMuted className="text-md">
-                  with a strong sensitivity to user experience.
-                </TypographyMuted>
-              </div>
-              <TypographyP className="text-justify">
-                {MESSAGES.aboutme}
+              <TypographyH4 className="text-neutral-600 dark:text-neutral-400 font-medium tracking-wide uppercase text-sm">
+                {MESSAGES.great_name}
+              </TypographyH4>
+              <TypographyH1 className="text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-neutral-900 via-neutral-600 to-neutral-400 dark:from-white dark:via-neutral-300 dark:to-neutral-600">
+                Full-Stack Engineer.
+              </TypographyH1>
+              <TypographyP className="text-xl text-neutral-500 max-w-2xl mx-auto">
+                {MESSAGES.message_strategry}
               </TypographyP>
             </div>
-            <Image
-              className="rounded-xl w-full"
-              alt="developer"
-              src="/about2.png"
-              width={300}
-              height={140}
+          </div>
+
+          <div className="flex justify-center pt-4">
+            <FloatingDock
+              items={contacts.map((contact) => ({
+                ...contact,
+                title: contact.name,
+              }))}
             />
           </div>
         </section>
-        <section id="skills" className="space-y-5">
-          <div>
-            <TypographyH1>Skills</TypographyH1>
-            <TypographyP>
-              Specialized in cross-platform application development. Expertise
-              in Python (Django), React, Next.js and React Native, as well as
-              REST API design and PostgreSQL databases. I have worked on various
-              projects, ranging from complex web applications to native mobile
-              applications. And here is my stack
+
+        <Separator />
+
+        {/* --- ABOUT SECTION --- */}
+        <section id="about" className="scroll-mt-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div className="space-y-2">
+                <Badge variant="outline" className="w-fit">About Me</Badge>
+                <TypographyH2 className="text-3xl font-bold">
+                  Bridging Web, Mobile & Desktop.
+                </TypographyH2>
+              </div>
+
+              <TypographyP className="text-neutral-600 dark:text-neutral-400 leading-relaxed text-justify">
+                I am a developer who goes beyond just writing code. My expertise lies in <span className="font-semibold text-foreground">Next.js, React Native, and Python (Django/Electron)</span>.
+                What sets me apart is my ability to dive into existing codebases to **stabilize, refactor, and maintain** them.
+                I bring a mathematical rigor to software architecture, ensuring that the projects I touch are scalable and robust.
+              </TypographyP>
+
+              <div className="flex gap-2 flex-wrap">
+                {/* Petits tags rapides pour le coup d'œil */}
+                {["TypeScript", "Python", "Electron", "React Native"].map(tech => (
+                  <Badge key={tech} variant="secondary" className="rounded-sm">{tech}</Badge>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-violet-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative aspect-video overflow-hidden rounded-xl border bg-card">
+                <Image
+                  className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-105"
+                  alt="Developer workspace"
+                  src="/about2.png" // Assure-toi que cette image est pro
+                  width={600}
+                  height={400}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* --- AI PHILOSOPHY SECTION (NEW) --- */}
+        <section id="ai-philosophy" className="scroll-mt-20">
+          <Card className="bg-gradient-to-br from-neutral-50 to-white dark:from-neutral-900 dark:to-neutral-950 border-neutral-200 dark:border-neutral-800 overflow-hidden relative">
+            <div className="absolute top-0 right-0 p-3 opacity-10">
+              <Bot className="w-24 h-24" />
+            </div>
+
+            <CardHeader>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <BrainCircuit className="w-6 h-6 text-primary" />
+                </div>
+                <TypographyH3 className="m-0">My Approach to AI</TypographyH3>
+              </div>
+            </CardHeader>
+
+            <CardContent className="space-y-4">
+              <div className="border-l-4 border-primary pl-4 py-1 italic text-lg text-neutral-700 dark:text-neutral-300">
+                &quot;I use AI as a Pilot, not an Autopilot.&quot;
+              </div>
+              <TypographyP>
+                In an era of auto-generated code, I stand for <strong>intentional engineering</strong>.
+                I treat Artificial Intelligence as a senior reviewer and strategic copilot.
+                I do not rely on it to spit out code I don&apos;t understand. Instead, I leverage it to:
+              </TypographyP>
+              <ul className="grid sm:grid-cols-2 gap-2 text-sm text-neutral-600 dark:text-neutral-400 mt-2">
+                <li className="flex items-center gap-2">
+                  <Terminal className="w-4 h-4 text-green-500" /> Review logic & catch edge cases
+                </li>
+                <li className="flex items-center gap-2">
+                  <Layers className="w-4 h-4 text-blue-500" /> Optimize architectural patterns
+                </li>
+                <li className="flex items-center gap-2">
+                  <Terminal className="w-4 h-4 text-purple-500" /> Accelerate unit testing
+                </li>
+                <li className="flex items-center gap-2">
+                  <Layers className="w-4 h-4 text-orange-500" /> Refactor legacy code safely
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* --- SKILLS SECTION --- */}
+        <section id="skills" className="space-y-8 scroll-mt-20">
+          <div className="max-w-2xl">
+            <TypographyH2>Technical Arsenal</TypographyH2>
+            <TypographyP className="text-neutral-500 mt-2">
+              From crafting fluid mobile experiences with <strong>React Native</strong> to building powerful desktop software with <strong>Electron & Python</strong>.
+              My stack is designed for versatility and performance.
             </TypographyP>
           </div>
           <SkillsSection />
         </section>
+
         <Separator />
-        <section id="contacts" className="space-y-5">
-          <div className="space-y-3">
-            <TypographyH3 className="text-4xl font-bold text-neutral-700 dark:text-neutral-300 ">
-              Contacts
-            </TypographyH3>
-            <TypographyP>
-              If you need more information, please do not hesitate to contact
-              me. I will respond to you as quickly as possible.
+
+        {/* --- CONTACT SECTION --- */}
+        <section id="contacts" className="space-y-8 scroll-mt-20">
+          <div className="text-center space-y-4">
+            <TypographyH2>Let&apos;s Collaborate</TypographyH2>
+            <TypographyP className="max-w-xl mx-auto text-neutral-500">
+              Whether you need to revive an old project or build a complex multi-platform solution from scratch, I&apos;m ready to help.
             </TypographyP>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-5">
-            {contacts.map((contact, index) => (
-              <div
-                key={index}
-                className="border rounded-md p-5 text-neutral-200 relative overflow-hidden cursor-pointer"
-              >
-                <TypographyH4>{contact.name}</TypographyH4>
-                <div className="flex items-center gap-2">
-                  {contact.icon}
-                  <CopieClipboardText text={contact?.value || ""} />
-                </div>
-              </div>
-            ))}
-          </div>
+          <ContactGrid contacts={contacts} />
         </section>
+
       </main>
     </div>
   );
