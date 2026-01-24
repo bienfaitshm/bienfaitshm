@@ -1,62 +1,77 @@
-# Hi 👋, I'm Bienfait SHOMARI
+<div align="center">
 
-## A Developer from DR Congo
+# Hi 👋, I'm Bienfait SHOMARI
+### Full-Stack Developer | TypeScript & Python Expert
+*Based in DR Congo* 🇨🇩
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-View_Projects-000?style=flat-square&logo=vercel&logoColor=white)](https://bienfaitshm.vercel.app/experiences)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bienfaitshm/)
+[![Gmail](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:bienfaishm@gmail.com)
+
+---
+
+</div>
 
 ## 🚀 About Me
 
-Developer exploring web development with **Next.js**, **Reactjs**, **TypeScript/Javascript**, **Vuejs**, **Python**, **Django** and Mobile developer with **React-native**
+I am a developer who bridges the gap between **Web, Mobile, and Desktop**.
+My strength lies not just in creating new products, but in **maintaining and revitalizing existing projects**. I bring a mathematical rigor to code structure and stability.
 
-## 💻 Tech Stack
+* **Core Stack:** TypeScript (React/Next.js), Python (Django), and Hybrid Desktop Apps (Electron + Python).
+* **Specialty:** Building scalable architectures and refactoring legacy codebases.
 
-### Languages
+---
 
+## 🤖 My Approach to AI
+> **"Pilot, not Autopilot."**
+>
+> I treat Artificial Intelligence as a **senior reviewer and strategic copilot**. I do not rely on it to generate blind code; instead, I use it to:
+> * Review my logic and catch edge cases.
+> * Optimize algorithms I have designed.
+> * Accelerate documentation and unit testing.
+>
+> **I ensure full understanding and ownership of every line of code I commit.**
+
+---
+
+## 🛠 Tech Stack
+
+### 💻 Languages
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-### Frameworks and Libraries
+### ⚛️ Frameworks & Ecosystems
+| Domain | Stack |
+| :--- | :--- |
+| **Frontend** | ![React](https://img.shields.io/badge/-React-20232a?style=flat-square&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![Tailwind](https://img.shields.io/badge/-Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) |
+| **Mobile** | ![React Native](https://img.shields.io/badge/-React_Native-20232a?style=flat-square&logo=react&logoColor=61DAFB) |
+| **Desktop** | ![Electron](https://img.shields.io/badge/-Electron.js-47848F?style=flat-square&logo=electron&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)|
+| **Backend** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) |
 
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![React Native](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react-native&logoColor=black)
+### 🗄️ Data & Tools
+![SQL Server](https://img.shields.io/badge/-SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
-## 🌱 Other Experience
-
-- Mathematics and Physics
-- Freelance
-
-<!-- ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black)
-![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) -->
+---
 
 ## 📊 GitHub Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=bienfaitshm&show_icons=true&theme=tokyonight)
+<div align="center">
 
-![GitHub stats](https://github-readme-streak-stats.herokuapp.com/?user=bienfaitshm&show_icons=true&theme=tokyonight)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=bienfaitshm&show_icons=true&theme=tokyonight&count_private=true&hide_border=true)
 
-![GitHub stats](https://github-readme-stats.vercel.app/api/top-langs?username=bienfaitshm&show_icons=true&theme=tokyonight&locale=en&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=bienfaitshm&show_icons=true&theme=tokyonight&layout=compact&hide_border=true&langs_count=6)
 
-- 👯 I’m looking to collaborate on **projects involving artificial intelligence**
+![GitHub Streak](https://streak-stats.demolab.com?user=bienfaitshm&theme=tokyonight&hide_border=true)
+</div>
 
-- 💬 Ask me about **full stack development,**
+---
 
-- 📫 How to reach me [bienfaishm@gmail.com](mailto:bienfaishm@gmail.com)
-
-### Languages and Tools
-
-[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/>](https://getbootstrap.com)
-[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>](https://www.cprogramming.com/)
-[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>](https://www.w3schools.com/css/)
-[<img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/>](https://www.djangoproject.com/)
-[<img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/>](https://www.figma.com/)
-[<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>](https://git-scm.com/)
-[<img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/>](https://heroku.com)
-[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>](https://www.w3.org/html/)
-[<img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/>](https://www.adobe.com/in/products/illustrator.html)
-[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>](https://www.linux.org/)
-[<img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/>](https://www.microsoft.com/en-us/sql-server)
-[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>](https://www.mysql.com/)
-[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/>](https://www.photoshop.com/en)
-[<img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/>](https://postman.com)
-[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>](https://www.python.org)
-[<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>](https://reactjs.org/)
-[<img src="https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg" alt="sketch" width="40" height="40"/>](https://www.sketch.com/)
+<div align="center">
+🤝 <b>Open to collaboration on complex Full-Stack & AI-integrated projects.</b>
+</div>
