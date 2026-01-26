@@ -57,7 +57,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <BgDot>
-              <div className="min-h-[100vh] px-3">
+              <div className="min-h-[100vh] px-1">
                 <Navbar />
                 {children}
                 <Footer />

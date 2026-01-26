@@ -78,7 +78,7 @@ export default function Home() {
               <TypographyH4 className="text-neutral-600 dark:text-neutral-400 font-medium tracking-wide uppercase text-sm">
                 {MESSAGES.great_name}
               </TypographyH4>
-              <TypographyH1 className="text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-neutral-900 via-neutral-600 to-neutral-400 dark:from-white dark:via-neutral-300 dark:to-neutral-600">
+              <TypographyH1 className="pb-4 text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-neutral-900 via-neutral-600 to-neutral-400 dark:from-white dark:via-neutral-300 dark:to-neutral-600">
                 Full-Stack Engineer.
               </TypographyH1>
               <TypographyP className="text-xl text-neutral-500 max-w-2xl mx-auto">

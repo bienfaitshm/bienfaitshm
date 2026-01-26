@@ -1,0 +1,50 @@
+[
+  {
+    "title": "2024",
+    "subtitle": "Product Launch",
+    "projectTitle": "Nova Dashboard",
+    "description": "Une plateforme analytique SaaS qui centralise les données de vente en temps réel. Intègre des graphiques interactifs et une gestion d'équipe avancée.",
+    "href": "https://github.com/votre-nom/nova-dashboard",
+    "tags": ["Next.js 14", "Tremor", "Supabase", "TypeScript"],
+    "images": [
+      "/avatar.jpg",
+      "/about1.png"
+    ]
+  },
+  {
+    "title": "2023",
+    "subtitle": "Freelance",
+    "projectTitle": "Lumina Studio",
+    "description": "Refonte complète du site vitrine pour une agence d'architecture. Focus sur les performances (Core Web Vitals) et des animations fluides au scroll.",
+    "href": "https://lumina-studio.example.com",
+    "tags": ["Framer Motion", "Tailwind CSS", "Sanity CMS"],
+    "images": [
+           "/avatar.jpg",
+      "/about1.png"
+    ]
+  },
+  {
+    "title": "2023",
+    "subtitle": "Open Source",
+    "projectTitle": "Easy-Auth Library",
+    "description": "Une bibliothèque légère pour simplifier l'authentification OAuth2 dans les environnements Node.js. Plus de 500 stars sur GitHub.",
+    "href": "https://github.com/votre-nom/easy-auth",
+    "tags": ["Node.js", "OAuth2", "Jest", "CI/CD"],
+    "images": [
+           "/avatar.jpg",
+      "/about1.png"
+    ]
+  },
+  {
+    "title": "2022",
+    "subtitle": "Side Project",
+    "projectTitle": "Zenith Weather",
+    "description": "Application météo minimaliste avec prévisions géolocalisées et fonds d'écran dynamiques selon les conditions climatiques.",
+    "href": "https://zenith-weather.app",
+    "tags": ["React Native", "OpenWeather API", "Expo"],
+    "images": [
+            "/avatar.jpg",
+      "/about1.png"
+    ]
+  }
+]
