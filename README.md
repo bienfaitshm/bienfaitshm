@@ -1,8 +1,8 @@
 <div align="center">
 
-# Hi 👋, I'm Bienfait SHOMARI
+# Hi, I'm Bienfait SHOMARI
 ### Full-Stack Developer | TypeScript & Python Expert
-*Based in DR Congo* 🇨🇩
+*Based in DR Congo*
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-View_Projects-000?style=flat-square&logo=vercel&logoColor=white)](https://bienfaitshm.vercel.app/experiences)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bienfaitshm/)
@@ -12,7 +12,7 @@
 
 </div>
 
-## 🚀 About Me
+## About Me
 
 I am a developer who bridges the gap between **Web, Mobile, and Desktop**.
 My strength lies not just in creating new products, but in **maintaining and revitalizing existing projects**. I bring a mathematical rigor to code structure and stability.
@@ -22,7 +22,7 @@ My strength lies not just in creating new products, but in **maintaining and rev
 
 ---
 
-## 🤖 My Approach to AI
+##My Approach to AI
 > **"Pilot, not Autopilot."**
 >
 > I treat Artificial Intelligence as a **senior reviewer and strategic copilot**. I do not rely on it to generate blind code; instead, I use it to:
@@ -34,14 +34,14 @@ My strength lies not just in creating new products, but in **maintaining and rev
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
-### 💻 Languages
+### Languages
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-### ⚛️ Frameworks & Ecosystems
+### Frameworks & Ecosystems
 | Domain | Stack |
 | :--- | :--- |
 | **Frontend** | ![React](https://img.shields.io/badge/-React-20232a?style=flat-square&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![Tailwind](https://img.shields.io/badge/-Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) |
@@ -49,7 +49,7 @@ My strength lies not just in creating new products, but in **maintaining and rev
 | **Desktop** | ![Electron](https://img.shields.io/badge/-Electron.js-47848F?style=flat-square&logo=electron&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)|
 | **Backend** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) |
 
-### 🗄️ Data & Tools
+### Data & Tools
 ![SQL Server](https://img.shields.io/badge/-SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white)
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
@@ -59,13 +59,13 @@ My strength lies not just in creating new products, but in **maintaining and rev
 
 ---
 
-## 📊 GitHub Stats
+## GitHub Stats
 
 <div align="center">
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=bienfaitshm&show_icons=true&theme=tokyonight&count_private=true&hide_border=true)
+<!-- ![GitHub stats](https://github-readme-stats.vercel.app/api?username=bienfaitshm&show_icons=true&theme=tokyonight&count_private=true&hide_border=true)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=bienfaitshm&show_icons=true&theme=tokyonight&layout=compact&hide_border=true&langs_count=6)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=bienfaitshm&show_icons=true&theme=tokyonight&layout=compact&hide_border=true&langs_count=6) -->
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=bienfaitshm&theme=tokyonight&hide_border=true)
 </div>
@@ -73,5 +73,5 @@ My strength lies not just in creating new products, but in **maintaining and rev
 ---
 
 <div align="center">
-🤝 <b>Open to collaboration on complex Full-Stack & AI-integrated projects.</b>
+<b>Open to collaboration on complex Full-Stack & AI-integrated projects.</b>
 </div>
