@@ -22,7 +22,7 @@ My strength lies not just in creating new products, but in **maintaining and rev
 
 ---
 
-##My Approach to AI
+## My Approach to AI
 > **"Pilot, not Autopilot."**
 >
 > I treat Artificial Intelligence as a **senior reviewer and strategic copilot**. I do not rely on it to generate blind code; instead, I use it to:
